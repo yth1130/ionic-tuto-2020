@@ -7,6 +7,10 @@ const weightInput = document.getElementById("weight-input");
 
 const resultArea = document.getElementById("result");
 
+const resetInputs = () => {
+    heightInput.value = '';
+    weightInput.value = '';
+};
 const calculateBmi = () => {
     const enteredHeight = heightInput.value;
     const enteredWeight = weightInput.value;
@@ -26,10 +30,6 @@ const calculateBmi = () => {
     `;
     resultArea.innerHTML = '';
     resultArea.appendChild(resultElement);
-};
-const resetInputs = () => {
-    heightInput.value = '';
-    weightInput.value = '';
 };
 
 calculateButton.addEventListener("click", calculateBmi);
