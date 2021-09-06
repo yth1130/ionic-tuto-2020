@@ -2,8 +2,8 @@ import { IonButton, IonCol, IonIcon, IonRow } from "@ionic/react";
 import { calculatorOutline, refreshOutline} from 'ionicons/icons';
 
 const BmiControls: React.FC<{
-    onCalculate: () => void;
-    onReset: () => void;
+    onCalculate: () => void,
+    onReset: () => void,
 }> = props => {
     return (
         <IonRow>
